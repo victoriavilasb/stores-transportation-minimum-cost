@@ -19,13 +19,6 @@ int main() {
         stores_position[i] = new Store(i, position_x, position_y);
     }
 
-    //  Set array to 0
-    for(int i = 0; i < stores_number; i++) {
-        for (int j = 0; j < stores_number; j++) {
-            stores_weight_graph[i][j] = 0;
-        }
-    }
-    
     // For each stores calculates the distance from the others
     for(int i = 0; i < stores_number; i++) {
         for (int j = 0; j < stores_number; j++) {
@@ -34,14 +27,14 @@ int main() {
         }
     }
 
-    // // TEST: Print graph to validate weights
-    // for(int i = 0; i < stores_number; i++) {
-    //     for (int j = 0; j < stores_number; j++) {
-    //         cout << stores_weight_graph[i][j] << " ";
-    //     }
+    // TEST: Print graph to validate weights
+    for(int i = 0; i < stores_number; i++) {
+        for (int j = 0; j < stores_number; j++) {
+            cout << stores_weight_graph[i][j] << " ";
+        }
 
-    //     cout << endl;
-    // }   
+        cout << endl;
+    }   
 
     return 0;
 }
