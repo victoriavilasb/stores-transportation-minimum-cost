@@ -1,4 +1,4 @@
-#include "../include/edge.hpp"
+#include <edge.h>
 #include <iostream>
 
 Edge::Edge(int x, int y, double weight) {

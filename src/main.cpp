@@ -1,13 +1,11 @@
 #include <iostream>
 #include <iomanip> 
-#include "../include/store.hpp"
-#include "../include/edge.hpp"
+#include <store.h>
+#include <edge.h>
 #include <vector>
 #include <algorithm>
 #include <cstring>
 using namespace std;
-
-#define INF 9999999
 
 vector<double>
 kruskal(int vertices_size, vector<int> tree_ids, vector<Edge> edges) {
@@ -51,7 +49,6 @@ int main() {
         stores[i] = new Store(i, position_x, position_y);
         stores_ids.push_back(i);
     }
-
 
     // For each stores calculates the distance from the others
     for(int i = 0; i < stores_number; i++) {

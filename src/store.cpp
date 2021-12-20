@@ -1,4 +1,4 @@
-#include "../include/store.hpp"
+#include <store.h>
 #include <iostream>
 #include <cmath>
 
